@@ -42,7 +42,7 @@ cacheSolve <- function(x, ...) {
 
         dat <- x$get()
         xcache <- solve(dat, ...)
-        x$setinverse(m)
+        x$setinverse(xcache)
 	##Return the inverse
         xcache
 }
